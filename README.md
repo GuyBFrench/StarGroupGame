@@ -13,3 +13,7 @@ Weapons variations for the player to defend themself with
 Gold to pickup and find through exploring
 Chests to find items and gold
 A shop for the player to spend gold in 
+
+Brady-Character designs and Rigging
+Benhem- Level Design and Scripting
+Amanda- Texturing and Lighting
