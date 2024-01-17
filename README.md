@@ -1,4 +1,4 @@
-DUNGEON CRAWLER
+DUNGEON CRAWLER 
 
 This is a WIP dungeon crawler game created by 3 students of UVU's 3D animation and game development major.
 
@@ -18,12 +18,7 @@ Brady-Character designs and Rigging
 Benhem- Level Design and Scripting
 Amanda- Texturing and Lighting
 
-
-
-
-
-
-
 Things we still need to figure out:
 -Making random levels in unity 
 -Art style
+=======
