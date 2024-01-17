@@ -16,4 +16,9 @@ A shop for the player to spend gold in
 
 Brady-Character designs and Rigging
 Benhem- Level Design and Scripting
-Amanda- Texturing and Lightings
+Amanda- Texturing and Lighting
+
+Things we still need to figure out:
+-Making random levels in unity 
+-Art style
+=======
