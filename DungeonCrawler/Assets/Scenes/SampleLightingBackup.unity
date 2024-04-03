@@ -46399,7 +46399,7 @@ GameObject:
   - component: {fileID: 751709680}
   - component: {fileID: 751709679}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Pause Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52308,7 +52308,7 @@ GameObject:
   - component: {fileID: 931667278}
   - component: {fileID: 931667277}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Roll Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85385,7 +85385,7 @@ GameObject:
   - component: {fileID: 1965210548}
   - component: {fileID: 1965210547}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Attack Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
