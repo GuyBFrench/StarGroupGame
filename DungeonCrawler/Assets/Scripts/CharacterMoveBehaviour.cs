@@ -12,6 +12,8 @@ public class CharacterMoveBehaviour : MonoBehaviour
     private LookChar playerInput;
     private CharacterController controller;
     private Transform camMain;
+    private Transform child;
+    [SerializeField] private float rotationSpeed = 4f;
 
     [SerializeField] private FloatData speed;
 
@@ -24,6 +26,7 @@ public class CharacterMoveBehaviour : MonoBehaviour
     private void Start()
     {
         camMain = Camera.main.transform;
+        child = transform.GetChild(0).transform;
     }
 
     private void OnEnable()
@@ -44,7 +47,8 @@ public class CharacterMoveBehaviour : MonoBehaviour
         controller.Move(move * (Time.deltaTime * speed.Value));
         if  (movementInput != Vector2.zero)
         {
-            transform.LookAt(move);
+            Quaternion rotation = Quaternion.Euler(new Vector3(child.localEulerAngles.x, camMain.localEulerAngles.y,child.localEulerAngles.z));
+            child.rotation = Quaternion.Lerp(child.rotation,rotation, Time.deltaTime * rotationSpeed);
             animator.SetBool("IsWalking", true);
         }
         else
