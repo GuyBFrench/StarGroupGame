@@ -1,5 +1,7 @@
 DUNGEON CRAWLER 
 
+Planning to be done with vertical slice by April 18th
+
 This is a WIP dungeon crawler game created by 3 students of UVU's 3D animation and game development major.
 
 This game will have a player character running through a dungeon/labyrinth fighting enemies, collecting items and gold,
