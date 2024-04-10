@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3666146524786409752}
-  - component: {fileID: 1486876615743508689}
+  - component: {fileID: 8251297805088961066}
   m_Layer: 0
   m_Name: ConvexCorner
   m_TagString: Untagged
@@ -33,8 +33,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1486876615743508689
-BoxCollider:
+--- !u!64 &8251297805088961066
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -51,9 +51,10 @@ BoxCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: fa57d2b8f1f3441408a1175ea0ebc8ea, type: 3}
 --- !u!1001 &1208050125212250316
 PrefabInstance:
   m_ObjectHideFlags: 0
