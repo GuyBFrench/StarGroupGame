@@ -55,8 +55,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.17278, y: 2.9641445, z: 1.1735628}
-  m_Center: {x: 0.011106253, y: 1.4799637, z: -0.0015125275}
+  m_Size: {x: 1.0558884, y: 1.5115671, z: 0.59706414}
+  m_Center: {x: 0.016020775, y: 0.753675, z: 0.0023825169}
 --- !u!114 &2622293619998205461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,12 +86,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e4e86db32d053974b8a554e9acf4e446, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e4e86db32d053974b8a554e9acf4e446, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e4e86db32d053974b8a554e9acf4e446, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e4e86db32d053974b8a554e9acf4e446, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e4e86db32d053974b8a554e9acf4e446, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.987
+      value: 0.49899995
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e4e86db32d053974b8a554e9acf4e446, type: 3}
       propertyPath: m_LocalPosition.z
@@ -152,12 +164,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e4e86db32d053974b8a554e9acf4e446, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e4e86db32d053974b8a554e9acf4e446, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e4e86db32d053974b8a554e9acf4e446, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e4e86db32d053974b8a554e9acf4e446, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e4e86db32d053974b8a554e9acf4e446, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.965
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e4e86db32d053974b8a554e9acf4e446, type: 3}
       propertyPath: m_LocalPosition.z
@@ -195,6 +219,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenCrate (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1151388028547126963, guid: e4e86db32d053974b8a554e9acf4e446, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -216,6 +244,18 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e4e86db32d053974b8a554e9acf4e446, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e4e86db32d053974b8a554e9acf4e446, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e4e86db32d053974b8a554e9acf4e446, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e4e86db32d053974b8a554e9acf4e446, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e4e86db32d053974b8a554e9acf4e446, type: 3}
       propertyPath: m_LocalPosition.x
