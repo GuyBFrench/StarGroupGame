@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5929044931607983105}
   - component: {fileID: 7615454267128003737}
   - component: {fileID: 5869652843313532687}
+  - component: {fileID: -4354971810365819070}
   m_Layer: 0
   m_Name: Wooden_Crate
   m_TagString: Untagged
@@ -71,6 +72,48 @@ MonoBehaviour:
   onDestroyEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &-4354971810365819070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7894156139515707766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13c7f4a3b2568d644bd059631a5f8866, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5869652843313532687}
+        m_TargetAssemblyTypeName: FadeAndDestroy, Assembly-CSharp
+        m_MethodName: FadeOutAndDestroy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  triggerEnterRepeatEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerEnterEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerExitEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  delayTime: 0.01
+  canRepeat: 0
+  repeatTimes: 10
 --- !u!1001 &3011242318764729259
 PrefabInstance:
   m_ObjectHideFlags: 0
