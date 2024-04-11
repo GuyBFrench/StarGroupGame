@@ -12,12 +12,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ButtonBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SlimeEnemyBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TriggerEventsBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -83,17 +77,6 @@
       <workItem from="1712105068882" duration="3945000" />
       <workItem from="1712164200311" duration="1412000" />
       <workItem from="1712166022295" duration="382000" />
-      <workItem from="1712168774195" duration="1412000" />
-      <workItem from="1712250955257" duration="72000" />
-      <workItem from="1712253285001" duration="2022000" />
-      <workItem from="1712259687326" duration="2496000" />
-      <workItem from="1712284074309" duration="2777000" />
-      <workItem from="1712378597618" duration="3133000" />
-      <workItem from="1712447414452" duration="148000" />
-      <workItem from="1712448204567" duration="9931000" />
-      <workItem from="1712684048583" duration="4785000" />
-      <workItem from="1712702855427" duration="893000" />
-      <workItem from="1712716567138" duration="474000" />
     </task>
     <servers />
   </component>

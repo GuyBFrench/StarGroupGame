@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7615454267128003737}
   - component: {fileID: 5869652843313532687}
   - component: {fileID: -4354971810365819070}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wooden_Crate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,6 +181,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e4e86db32d053974b8a554e9acf4e446, type: 3}
       propertyPath: m_Name
       value: WoodenCrate
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e4e86db32d053974b8a554e9acf4e446, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: e4e86db32d053974b8a554e9acf4e446, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
