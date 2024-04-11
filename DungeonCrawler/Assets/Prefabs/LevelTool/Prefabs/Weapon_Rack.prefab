@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6495103367049096964}
   - component: {fileID: 3438012176070695265}
   - component: {fileID: -3301839396627893586}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Weapon_Rack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,6 +169,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 91e8d3f596ea3914ebbf6509b2cc3483, type: 3}
       propertyPath: m_Name
       value: WeaponRack
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 91e8d3f596ea3914ebbf6509b2cc3483, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 91e8d3f596ea3914ebbf6509b2cc3483, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
