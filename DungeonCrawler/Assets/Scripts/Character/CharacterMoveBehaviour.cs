@@ -17,7 +17,19 @@ public class CharacterMoveBehaviour : MonoBehaviour
     [SerializeField] private float rotationSpeed = 4f;
     [SerializeField] private Button attackButton;
     [SerializeField] private Button rollButton;
-    public UnityEvent onAttack, offAttack;
+    public UnityEvent onAttack, offAttack, onCharDeath;
+    [SerializeField] private Sprite fullHeart;
+    [SerializeField] private Sprite emptyHeart;
+    [SerializeField] private Image[] hearts;
+    [SerializeField] private int heartNum;
+    [SerializeField] private int health;
+    private bool canLose = true;
+    [SerializeField] private Material orgMat;
+    [SerializeField] private Material flashMat;
+    [SerializeField] private Renderer rendBody;
+    [SerializeField] private Renderer rendSword;
+    [SerializeField] private Renderer rendHead;
+    [SerializeField] private Renderer rendFeet;
     
 
 
@@ -61,17 +73,60 @@ public class CharacterMoveBehaviour : MonoBehaviour
                 float targAngle = Mathf.Atan2(movementInput.x, movementInput.y) * Mathf.Rad2Deg + camMain.eulerAngles.y;
                 Quaternion rotation = Quaternion.Euler(0f, targAngle, 0f);
                 transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * rotationSpeed);
+                animator.SetBool("IsHurt", false);
                 animator.SetBool("IsWalking", true);
             }
             else
             {
                 animator.SetBool("IsWalking", false);
+                if (health < 2)
+                {
+                    animator.SetBool("IsHurt", true);
+                }
             }
         }
         
         
-    }
     
+    if (health > heartNum)
+        {
+            health = heartNum;
+        }
+
+        for (int i = 0; i < hearts.Length; i++)
+        {
+            if (i < health)
+            {
+                hearts[i].sprite = fullHeart;
+            }
+            else
+            {
+                hearts[i].sprite = emptyHeart;
+            }
+
+            if (i < heartNum)
+            {
+                hearts[i].enabled = true;
+            }
+
+            else
+            {
+                hearts[i].enabled = false;
+            }
+        }
+
+        if (health <= 0)
+        {
+            canMove = false;
+            animator.SetBool("IsHurt", false);
+            animator.SetBool("IsWalking", false);
+            animator.SetBool("IsDead", true);
+            
+            onCharDeath.Invoke();
+            
+        }
+    }
+
     public void isRoll()
     {
         
@@ -87,6 +142,35 @@ public class CharacterMoveBehaviour : MonoBehaviour
         StartCoroutine(WaitForAnim("IsRoll"));
     }
 
+    public void loseHealth()
+    {
+        if (canLose)
+        {
+            health -= 1;
+        }
+    }
+    
+    public void BeginFlash()
+    {
+        canLose = false;
+        StartCoroutine(OnFlash());
+    }
+
+    private IEnumerator OnFlash()
+    {
+        
+        rendBody.sharedMaterial = flashMat;
+        rendFeet.sharedMaterial = flashMat;
+        rendHead.sharedMaterial = flashMat;
+        rendSword.sharedMaterial = flashMat;
+        yield return new WaitForSeconds(0.5f);
+        rendBody.sharedMaterial = orgMat;
+        rendFeet.sharedMaterial = orgMat;
+        rendSword.sharedMaterial = orgMat;
+        rendHead.sharedMaterial = orgMat;
+        canLose = true;
+
+    }
     public void isAttack()
     {
         canMove = false;

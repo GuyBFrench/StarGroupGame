@@ -130,6 +130,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onCharDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  fullHeart: {fileID: 0}
+  emptyHeart: {fileID: 0}
+  hearts: []
+  heartNum: 0
+  health: 0
+  orgMat: {fileID: 0}
+  flashMat: {fileID: 0}
+  rendBody: {fileID: 6200913822951155211}
+  rendSword: {fileID: 4263011758958067718}
+  rendHead: {fileID: 5303106198309286228}
+  rendFeet: {fileID: 5982015465590438158}
   speed: {fileID: 11400000, guid: 6dd2abcdf5291415d9e021995c126c3d, type: 2}
   canMove: 1
 --- !u!1 &968124477945343818
@@ -156,7 +170,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 968124477945343818}
-  m_LocalRotation: {x: 0.14045607, y: 0.012553306, z: -0.0017809878, w: 0.99000573}
+  m_LocalRotation: {x: 0.14045608, y: 0.012553338, z: -0.0017809924, w: 0.99000573}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1215,6 +1229,26 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 376925976771478668}
   m_SourcePrefab: {fileID: 100100000, guid: df1b31e82741449eabed6df527893705, type: 3}
+--- !u!23 &4263011758958067718 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -3674086272970584044, guid: df1b31e82741449eabed6df527893705, type: 3}
+  m_PrefabInstance: {fileID: 8514693480280313874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &5303106198309286228 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -4633590050937577146, guid: df1b31e82741449eabed6df527893705, type: 3}
+  m_PrefabInstance: {fileID: 8514693480280313874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &5982015465590438158 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2679122554120595740, guid: df1b31e82741449eabed6df527893705, type: 3}
+  m_PrefabInstance: {fileID: 8514693480280313874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &6200913822951155211 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2316071624767534617, guid: df1b31e82741449eabed6df527893705, type: 3}
+  m_PrefabInstance: {fileID: 8514693480280313874}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7395888377350830167 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8031820493434722235, guid: df1b31e82741449eabed6df527893705, type: 3}

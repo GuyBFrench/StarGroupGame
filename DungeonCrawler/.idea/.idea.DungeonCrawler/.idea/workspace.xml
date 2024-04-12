@@ -6,11 +6,42 @@
   <component name="ChangeListManager">
     <list default="true" id="2b4672aa-6bdc-428f-a86d-5c53eaa35848" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DungeonCrawler/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DungeonCrawler/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anims/MainChar/KnightAC.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/MainChar/KnightAC.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anims/MainChar/KnightCheer.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/MainChar/KnightCheer.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anims/MainChar/KnightIdleLow.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/MainChar/KnightIdleLow.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enemies.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enemies/PurpleSlime.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enemies/PurpleSlime/PurpleDie.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enemies/PurpleSlime/PurpleDie.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enemies/PurpleSlime/PurpleDie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enemies/PurpleSlime/PurpleDie.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enemies/PurpleSlime/PurpleSlimeMat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enemies/PurpleSlime/PurpleSlimeMat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enemies/PurpleSlime/Slime2_Prp_Slime_BaseColor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enemies/PurpleSlime/Slime2_Prp_Slime_BaseColor.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enemies/PurpleSlime/Slime2_Prp_Slime_Emissive.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enemies/PurpleSlime/Slime2_Prp_Slime_Emissive.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enemies/PurpleSlime/Slime2_Prp_Slime_Height.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enemies/PurpleSlime/Slime2_Prp_Slime_Height.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enemies/PurpleSlime/Slime2_Prp_Slime_Normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enemies/PurpleSlime/Slime2_Prp_Slime_Normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enemies/PurpleSlime/Slime2_Prp_Slime_Roughness.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enemies/PurpleSlime/Slime2_Prp_Slime_Roughness.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enemies/White.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Enemies/White.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleLightingBackup.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleLightingBackup.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterMoveBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterMoveBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/WorldSpaceCanvasBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -36,7 +67,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.1f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.3.1f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -77,6 +108,20 @@
       <workItem from="1712105068882" duration="3945000" />
       <workItem from="1712164200311" duration="1412000" />
       <workItem from="1712166022295" duration="382000" />
+      <workItem from="1712168774195" duration="1412000" />
+      <workItem from="1712250955257" duration="72000" />
+      <workItem from="1712253285001" duration="2022000" />
+      <workItem from="1712259687326" duration="2496000" />
+      <workItem from="1712284074309" duration="2777000" />
+      <workItem from="1712378597618" duration="3133000" />
+      <workItem from="1712447414452" duration="148000" />
+      <workItem from="1712448204567" duration="9931000" />
+      <workItem from="1712684048583" duration="4785000" />
+      <workItem from="1712702855427" duration="893000" />
+      <workItem from="1712716567138" duration="474000" />
+      <workItem from="1712798510081" duration="8109000" />
+      <workItem from="1712862531583" duration="1675000" />
+      <workItem from="1712876883098" duration="3344000" />
     </task>
     <servers />
   </component>
