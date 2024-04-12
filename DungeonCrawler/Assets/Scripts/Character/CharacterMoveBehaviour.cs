@@ -30,6 +30,7 @@ public class CharacterMoveBehaviour : MonoBehaviour
     [SerializeField] private Renderer rendSword;
     [SerializeField] private Renderer rendHead;
     [SerializeField] private Renderer rendFeet;
+    [SerializeField] private Material orgHeadMat;
     
 
 
