@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 93105ac59bd984e3c9fa56c4451c4b99
+guid: 44bf9ce329908014fa9252befb9b3a34
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,76 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: you lose-01_0
+      name: victory-01_0
       rect:
         serializedVersion: 2
-        x: 199
-        y: 268
-        width: 448
-        height: 107
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d1dc26f7dfd19e2499b7240bc99246c8
-      internalID: -1535855403
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: you lose-01_1
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 153
-        width: 457
-        height: 95
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4260794aacb56484a87ce4d7de9a6bf2
-      internalID: -1104740239
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: you lose-01_2
-      rect:
-        serializedVersion: 2
-        x: 193
-        y: 44
-        width: 464
-        height: 104
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1cc1a0b365a77c84bb9e868166ffe4ef
-      internalID: 411518322
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: you lose-01_3
-      rect:
-        serializedVersion: 2
-        x: 210
-        y: 402
-        width: 396
-        height: 376
+        x: 87
+        y: 500
+        width: 609
+        height: 142
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,8 +137,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63489c7b5c3f2f84fa13ef64fa438559
-      internalID: 926333823
+      spriteID: 34c60af8c2b54ef4693fdddc7a895877
+      internalID: 208367522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victory-01_1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 210
+        width: 285
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7316605da367b5443a42c2f0340462c6
+      internalID: -746045371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: victory-01_2
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 196
+        width: 278
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b64046e8ec0b262468fd5994def7afde
+      internalID: 224267202
       vertices: []
       indices: 
       edges: []
@@ -209,7 +188,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 481ee92a5dfdbf24fb8b10ea344f1544
     internalID: 0
     vertices: []
     indices: 
@@ -217,11 +196,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      you lose-01_0: -1535855403
-      you lose-01_1: -1104740239
-      you lose-01_2: 411518322
-      you lose-01_3: 926333823
-      you lose-01_4: 95638089
+      victory-01_0: 208367522
+      victory-01_1: -746045371
+      victory-01_2: 224267202
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
