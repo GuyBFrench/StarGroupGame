@@ -54,8 +54,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.6544796, y: 2.498215, z: 0.77946985}
-  m_Center: {x: 0.0022249753, y: -0.714278, z: -0.0495663}
+  m_Size: {x: 1.6544797, y: 2.5767143, z: 0.77946985}
+  m_Center: {x: 0.0022249753, y: -0.9273088, z: -0.0495663}
 --- !u!114 &3438012176070695265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,7 +132,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91e8d3f596ea3914ebbf6509b2cc3483, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2
+      value: -2.25
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91e8d3f596ea3914ebbf6509b2cc3483, type: 3}
       propertyPath: m_LocalPosition.z
@@ -166,6 +166,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 91e8d3f596ea3914ebbf6509b2cc3483, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6bc0937089eeb9c48a40126c365c6b3d, type: 2}
     - target: {fileID: 919132149155446097, guid: 91e8d3f596ea3914ebbf6509b2cc3483, type: 3}
       propertyPath: m_Name
       value: WeaponRack
