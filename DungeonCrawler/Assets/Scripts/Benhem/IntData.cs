@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Events;
 
 [CreateAssetMenu]
-public class IntData1 : ScriptableObject
+public class IntData : ScriptableObject
 {
     public UnityEvent maxValueEvent, minValueEvent;
     public int value;
@@ -13,7 +13,7 @@ public class IntData1 : ScriptableObject
         value = num;
     }
 
-    public void CompareValue(IntData1 obj)
+    public void CompareValue(IntData obj)
     {
         if (value >= obj.value)
         {
@@ -25,7 +25,7 @@ public class IntData1 : ScriptableObject
         }
     }
     
-    public void SetValue(IntData1 obj)
+    public void SetValue(IntData obj)
     {
         value = obj.value;
     }
