@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b4672aa-6bdc-428f-a86d-5c53eaa35848" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DungeonCrawler/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DungeonCrawler/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Benhem/CoroutineBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Benhem/CoroutineBehavior.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Benhem/IntData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Benhem/IntData.cs" afterDir="false" />
-    </list>
+    <list default="true" id="2b4672aa-6bdc-428f-a86d-5c53eaa35848" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,7 +81,7 @@
       <workItem from="1712616362758" duration="1387000" />
       <workItem from="1712709577528" duration="2029000" />
       <workItem from="1712828344503" duration="3471000" />
-      <workItem from="1712961577749" duration="871000" />
+      <workItem from="1712961577749" duration="1478000" />
     </task>
     <servers />
   </component>
