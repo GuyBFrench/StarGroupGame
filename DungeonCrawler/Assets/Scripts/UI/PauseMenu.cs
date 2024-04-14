@@ -1,9 +1,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+using UnityEngine;
+
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private CanvasGroup pauseMenuCanvasGroup;
+    [SerializeField] private GameObject pauseMenuObject; 
 
     private void Start()
     {
@@ -23,12 +25,6 @@ public class GameManager : MonoBehaviour
         SetTimeScale(1f);
     }
 
-    public void Menu(int sceneID)
-    {
-        SetTimeScale(1f);
-        SceneManager.LoadScene(sceneID);
-    }
-
     public void Quit()
     {
         Debug.Log("Quit!");
@@ -37,9 +33,7 @@ public class GameManager : MonoBehaviour
 
     private void SetPauseMenuVisible(bool visible)
     {
-        pauseMenuCanvasGroup.interactable = visible;
-        pauseMenuCanvasGroup.blocksRaycasts = visible;
-        pauseMenuCanvasGroup.alpha = visible ? 1 : 0; // Optionally, you can fade in/out the pause menu
+        pauseMenuObject.SetActive(visible);
     }
 
     private void SetTimeScale(float scale)

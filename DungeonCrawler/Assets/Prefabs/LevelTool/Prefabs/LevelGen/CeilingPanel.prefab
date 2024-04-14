@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7421816528867357685}
   - component: {fileID: 595646558024839457}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CeilingPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,9 +62,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7421816528867357685}
     m_Modifications:
+    - target: {fileID: 2463925024442422731, guid: c9df680049830f746ad4c0b612646754, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2500529302393367448, guid: c9df680049830f746ad4c0b612646754, type: 3}
       propertyPath: m_Name
       value: CeilingPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2500529302393367448, guid: c9df680049830f746ad4c0b612646754, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2801302378437483843, guid: c9df680049830f746ad4c0b612646754, type: 3}
       propertyPath: m_RootOrder
@@ -109,6 +117,10 @@ PrefabInstance:
     - target: {fileID: 2801302378437483843, guid: c9df680049830f746ad4c0b612646754, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6898482329765113106, guid: c9df680049830f746ad4c0b612646754, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
