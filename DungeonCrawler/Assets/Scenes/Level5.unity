@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &872940 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8400557286378228479, guid: 5e252e0b88ea03b439c6c48f4c3726da, type: 3}
+  m_PrefabInstance: {fileID: 1729968212}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1569595
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49304,11 +49309,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8147805229980084969, guid: f9771341edaace944a0ca53ddafde260, type: 3}
   m_PrefabInstance: {fileID: 1966129944}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1970372159 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 251018248933607700, guid: 5e252e0b88ea03b439c6c48f4c3726da, type: 3}
-  m_PrefabInstance: {fileID: 1729968212}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1973044122
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50134,7 +50134,7 @@ PrefabInstance:
     - target: {fileID: 442119001419036790, guid: 72e40e8909b80ed44ad1fc9aa7744320, type: 3}
       propertyPath: onCharDeath.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1970372159}
+      objectReference: {fileID: 872940}
     - target: {fileID: 442119001419036790, guid: 72e40e8909b80ed44ad1fc9aa7744320, type: 3}
       propertyPath: onCharDeath.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
