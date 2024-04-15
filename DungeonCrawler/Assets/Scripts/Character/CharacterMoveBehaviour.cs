@@ -12,12 +12,12 @@ public class CharacterMoveBehaviour : MonoBehaviour
 {
     [SerializeField] private Animator animator;
     private LookChar playerInput;
-    private CharacterController controller;
+    [SerializeField] private CharacterController controller;
     private Transform camMain;
     [SerializeField] private float rotationSpeed = 4f;
     [SerializeField] private Button attackButton;
     [SerializeField] private Button rollButton;
-    public UnityEvent onAttack, offAttack, onCharDeath;
+    public UnityEvent strikeEvent, offStrikeEvent, onCharDeath;
     [SerializeField] private Sprite fullHeart;
     [SerializeField] private Sprite emptyHeart;
     [SerializeField] private Image[] hearts;
@@ -31,6 +31,7 @@ public class CharacterMoveBehaviour : MonoBehaviour
     [SerializeField] private Renderer rendHead;
     [SerializeField] private Renderer rendFeet;
     [SerializeField] private Material orgHeadMat;
+    [SerializeField] private Material orgSwordMat;
     
 
 
@@ -41,7 +42,6 @@ public class CharacterMoveBehaviour : MonoBehaviour
     private void Awake()
     {
         playerInput = new LookChar();
-        controller = GetComponent<CharacterController>();
     }
 
     private void Start()
@@ -124,7 +124,7 @@ public class CharacterMoveBehaviour : MonoBehaviour
             animator.SetBool("IsDead", true);
             
             onCharDeath.Invoke();
-            
+
         }
     }
 
@@ -133,6 +133,7 @@ public class CharacterMoveBehaviour : MonoBehaviour
         
         canMove = false;
         animator.SetBool("IsWalking", false);
+        animator.SetBool("IsHurt", false);
         animator.SetBool("IsRoll", true);
         rollButton.onClick.AddListener(() =>
         {
@@ -150,11 +151,26 @@ public class CharacterMoveBehaviour : MonoBehaviour
             health -= 1;
         }
     }
-    
+
+    public void RollForward()
+    {
+        
+        controller.Move(Vector3.Lerp(transform.position, transform.forward * 3, 1));
+        
+    }
+
+    // private IEnumerator OnRollForward()
+    // {
+    //     
+    // }
+
     public void BeginFlash()
     {
-        canLose = false;
-        StartCoroutine(OnFlash());
+        if (canLose && health > 0)
+        {
+            
+            StartCoroutine(OnFlash());
+        }
     }
 
     private IEnumerator OnFlash()
@@ -164,21 +180,35 @@ public class CharacterMoveBehaviour : MonoBehaviour
         rendFeet.sharedMaterial = flashMat;
         rendHead.sharedMaterial = flashMat;
         rendSword.sharedMaterial = flashMat;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1.5f);
         rendBody.sharedMaterial = orgMat;
         rendFeet.sharedMaterial = orgMat;
-        rendSword.sharedMaterial = orgMat;
-        rendHead.sharedMaterial = orgMat;
-        canLose = true;
+        rendSword.sharedMaterial = orgSwordMat;
+        rendHead.sharedMaterial = orgHeadMat;
+        
 
+    }
+
+    public void isInvincible()
+    {
+        canLose = false;
+        Debug.Log("invincble");
+        StartCoroutine(Invincible());
+    }
+
+    private IEnumerator Invincible()
+    {
+        yield return new WaitForSeconds(2.5f);
+        canLose = true;
     }
     public void isAttack()
     {
         canMove = false;
         
-        onAttack.Invoke();
+        
         
         animator.SetBool("IsWalking", false);
+        animator.SetBool("IsHurt", false);
         animator.SetBool("IsAttack", true);
         
         
@@ -193,12 +223,28 @@ public class CharacterMoveBehaviour : MonoBehaviour
 
     }
 
+    public void onStrike()
+    {
+        strikeEvent.Invoke();
+    }
+
+    public void offStrike()
+    {
+        offStrikeEvent.Invoke();
+    }
+
     private IEnumerator WaitForAnim(string animName)
     {
-        yield return new WaitForSeconds(animator.GetCurrentAnimatorClipInfo(0)[0].clip.length);
+        float animWait = animator.GetCurrentAnimatorClipInfo(0)[0].clip.length;
+
+        if (health < 2)
+        {
+            animWait *= 0.5f;
+        }
+
+        yield return new WaitForSeconds(animWait);
         
         animator.SetBool(animName, false);
-        offAttack.Invoke();
         canMove = true;
         
         

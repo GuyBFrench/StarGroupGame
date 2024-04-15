@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff74838b2443e4c7097e3b0b5b656392, type: 3}
   m_Name: Speed
   m_EditorClassIdentifier: 
-  value: 5
+  value: 4.25
   minValue: 0
   maxValue: 0
   minValueEvent:
