@@ -48,7 +48,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -106,6 +106,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 103251f576f145540bf152ff4c020802, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 627a8ee8e0257ab47a2f0da8b7e6321f, type: 2}
     - target: {fileID: 919132149155446097, guid: 103251f576f145540bf152ff4c020802, type: 3}
       propertyPath: m_Name
       value: LevelEntrance
@@ -146,12 +150,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3.2314785, y: 1.5308353, z: 3.310706}
-  m_Center: {x: -0.050917864, y: 0.36995488, z: 0.026659071}
+  m_Size: {x: 5.351363, y: 1.5308353, z: 5.1791587}
+  m_Center: {x: 0.15536523, y: 0.36995488, z: 0.012132764}
 --- !u!4 &1834593305441556782 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 103251f576f145540bf152ff4c020802, type: 3}
