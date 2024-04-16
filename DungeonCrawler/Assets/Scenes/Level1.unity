@@ -40183,6 +40183,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1742728437332308407, guid: 5e252e0b88ea03b439c6c48f4c3726da, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1947429798586827154, guid: 5e252e0b88ea03b439c6c48f4c3726da, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2600217293281044531, guid: 5e252e0b88ea03b439c6c48f4c3726da, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -40226,6 +40234,10 @@ PrefabInstance:
     - target: {fileID: 3813613087430522417, guid: 5e252e0b88ea03b439c6c48f4c3726da, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: isRoll
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425219214503053112, guid: 5e252e0b88ea03b439c6c48f4c3726da, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5573178023203307856, guid: 5e252e0b88ea03b439c6c48f4c3726da, type: 3}
       propertyPath: m_Pivot.x
@@ -40319,6 +40331,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: isAttack
       objectReference: {fileID: 0}
+    - target: {fileID: 6525781681635104371, guid: 5e252e0b88ea03b439c6c48f4c3726da, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -650
+      objectReference: {fileID: 0}
     - target: {fileID: 7316996580170150896, guid: 5e252e0b88ea03b439c6c48f4c3726da, type: 3}
       propertyPath: m_Name
       value: Canvas (1)
@@ -40326,6 +40342,10 @@ PrefabInstance:
     - target: {fileID: 8400557286378228479, guid: 5e252e0b88ea03b439c6c48f4c3726da, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9194715317137525133, guid: 5e252e0b88ea03b439c6c48f4c3726da, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -759
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
