@@ -5484,7 +5484,7 @@ MonoBehaviour:
   player: {fileID: 0}
   rigidbody: {fileID: 5660009939923093774}
   agent: {fileID: 3981621710890589951}
-  orgMat: {fileID: 2100000, guid: b5b6ae9791f74406b942601fdf9037c0, type: 2}
+  orgMat: {fileID: 2100000, guid: a27015362ec4f284f8533b03442108b3, type: 2}
   flashMat: {fileID: 2100000, guid: e6dc4e22f233b48daa2986cebde27121, type: 2}
   rend: {fileID: 8665302755737715353}
   fullHeart: {fileID: -943998537, guid: 7a3099239d4d1b24d8dc5eac0a7317ca, type: 3}

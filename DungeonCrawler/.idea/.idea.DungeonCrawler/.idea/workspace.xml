@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2b4672aa-6bdc-428f-a86d-5c53eaa35848" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DungeonCrawler/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DungeonCrawler/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anims/MainChar/KnightAC.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/MainChar/KnightAC.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Anims/MainChar/Roll.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/MainChar/Roll.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level9.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level9.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Canvas.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/OnTriggerBehavior.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/OnTriggerBehavior.cs.meta" beforeDir="false" />
@@ -44,7 +47,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+  <component name="RunManager">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.1f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
@@ -92,6 +95,9 @@
       <workItem from="1712828344503" duration="3471000" />
       <workItem from="1712961577749" duration="1478000" />
       <workItem from="1712998734335" duration="2733000" />
+      <workItem from="1713209261672" duration="1393000" />
+      <workItem from="1713289094781" duration="1993000" />
+      <workItem from="1713298768356" duration="2294000" />
     </task>
     <servers />
   </component>

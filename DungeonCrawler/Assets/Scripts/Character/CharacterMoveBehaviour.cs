@@ -33,6 +33,8 @@ public class CharacterMoveBehaviour : MonoBehaviour
     [SerializeField] private Material orgHeadMat;
     [SerializeField] private Material orgSwordMat;
     
+    
+    
 
 
     [SerializeField] private FloatData speed;
@@ -152,18 +154,21 @@ public class CharacterMoveBehaviour : MonoBehaviour
         }
     }
 
-    public void RollForward()
+    public void BeginRollForward()
     {
-        
-        controller.Move(Vector3.Lerp(transform.position, transform.forward * 3, 1));
-        
+        StartCoroutine(OnRollForward());
     }
 
-    // private IEnumerator OnRollForward()
-    // {
-    //     
-    // }
+    private IEnumerator OnRollForward()
+    {
+        float startTime = Time.time;
 
+        while (Time.time < startTime + 1)
+        {
+            controller.Move(transform.forward * 8 * Time.deltaTime);
+            yield return null;
+        }
+    }
     public void BeginFlash()
     {
         if (canLose && health > 0)
@@ -192,7 +197,6 @@ public class CharacterMoveBehaviour : MonoBehaviour
     public void isInvincible()
     {
         canLose = false;
-        Debug.Log("invincble");
         StartCoroutine(Invincible());
     }
 
@@ -252,7 +256,7 @@ public class CharacterMoveBehaviour : MonoBehaviour
 
     private IEnumerator WaitForReactiveAttack()
     {
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(3.5f);
         attackButton.interactable = true;
         
         
@@ -260,7 +264,7 @@ public class CharacterMoveBehaviour : MonoBehaviour
     
     private IEnumerator WaitForReactiveRoll()
     {
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(7);
         rollButton.interactable = true;
         
     }
