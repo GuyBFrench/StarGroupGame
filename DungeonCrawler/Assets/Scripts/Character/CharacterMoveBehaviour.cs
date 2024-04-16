@@ -180,7 +180,7 @@ public class CharacterMoveBehaviour : MonoBehaviour
         rendFeet.sharedMaterial = flashMat;
         rendHead.sharedMaterial = flashMat;
         rendSword.sharedMaterial = flashMat;
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1f);
         rendBody.sharedMaterial = orgMat;
         rendFeet.sharedMaterial = orgMat;
         rendSword.sharedMaterial = orgSwordMat;
