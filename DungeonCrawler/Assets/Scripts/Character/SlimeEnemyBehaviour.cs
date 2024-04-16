@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
@@ -16,15 +17,18 @@ public class SlimeEnemyBehaviour : MonoBehaviour
     [SerializeField] private Sprite emptyHeart;
     [SerializeField] private Image[] hearts;
     [SerializeField] private int heartNum;
-    [SerializeField] private int health;
+    [SerializeField] private int maxHealth;
+    private int health;
     public UnityEvent onDeath;
     [SerializeField] private Transform particle;
     [SerializeField] private Transform slimePosition;
-    
 
 
+    private void Start()
+    {
+        health = maxHealth;
+    }
 
-    
 
     private void Update()
     {
@@ -73,6 +77,11 @@ public class SlimeEnemyBehaviour : MonoBehaviour
         agent.SetDestination(transform.position);
     }
 
+    public void SetHealth()
+    {
+        health = maxHealth;
+    }
+    
     public void loseHealth()
     {
         health -= 1;

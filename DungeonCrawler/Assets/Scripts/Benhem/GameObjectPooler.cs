@@ -4,7 +4,6 @@ using System.Collections.Generic;
 public class GameObjectPooler : MonoBehaviour
 {
     public List<GameObject> initialPoolObjects = new List<GameObject>();
-    public int initialPoolSize = 10;
     public Vector3DataList spawnPositions; // Reference to Vector3DataList
     private List<GameObject> objectPool = new List<GameObject>();
 
@@ -27,13 +26,25 @@ public class GameObjectPooler : MonoBehaviour
             return;
         }
 
-        for (int i = 0; i < initialPoolSize; i++)
+        // Add objects from the scene to the pool
+        foreach (GameObject obj in initialPoolObjects)
         {
-            GameObject selectedObject = initialPoolObjects[Random.Range(0, initialPoolObjects.Count)];
+            AddObjectToPool(obj);
+        }
+    }
+
+    void AddObjectToPool(GameObject obj)
+    {
+        if (obj != null)
+        {
             Vector3 randomPosition = GetRandomPosition();
-            GameObject obj = Instantiate(selectedObject, randomPosition, Quaternion.identity);
-            obj.SetActive(false);
-            objectPool.Add(obj);
+            GameObject newObj = Instantiate(obj, randomPosition, Quaternion.identity);
+            newObj.SetActive(false);
+            objectPool.Add(newObj);
+        }
+        else
+        {
+            Debug.LogWarning("Attempting to add a null object to the pool.");
         }
     }
 

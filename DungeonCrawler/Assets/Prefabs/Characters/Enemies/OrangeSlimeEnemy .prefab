@@ -5492,7 +5492,7 @@ MonoBehaviour:
   hearts:
   - {fileID: 5142018279741557630}
   heartNum: 1
-  health: 1
+  maxHealth: 1
   onDeath:
     m_PersistentCalls:
       m_Calls:
