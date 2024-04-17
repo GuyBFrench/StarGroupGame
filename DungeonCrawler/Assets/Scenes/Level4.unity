@@ -23279,6 +23279,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 148555475530887710, guid: 75f2976f8d43f644fad0cffd7b9ba149, type: 3}
+      propertyPath: openButton
+      value: 
+      objectReference: {fileID: 1654294184}
     - target: {fileID: 1286882691477164742, guid: 75f2976f8d43f644fad0cffd7b9ba149, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -41114,6 +41118,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1789579330539365734, guid: ef0dbfb029f0fe74a907dcee4087b430, type: 3}
   m_PrefabInstance: {fileID: 1652830336}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1654294184 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 953769197755012153, guid: 5e252e0b88ea03b439c6c48f4c3726da, type: 3}
+  m_PrefabInstance: {fileID: 1729968212}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1654720480
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50297,19 +50312,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2631751730681491638, guid: 72e40e8909b80ed44ad1fc9aa7744320, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.92125034
+      value: 0.9212503
       objectReference: {fileID: 0}
     - target: {fileID: 2631751730681491638, guid: 72e40e8909b80ed44ad1fc9aa7744320, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.1478429
+      value: 0.14784291
       objectReference: {fileID: 0}
     - target: {fileID: 2631751730681491638, guid: 72e40e8909b80ed44ad1fc9aa7744320, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.35523295
+      value: 0.35523286
       objectReference: {fileID: 0}
     - target: {fileID: 2631751730681491638, guid: 72e40e8909b80ed44ad1fc9aa7744320, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.057008035
+      value: -0.057008024
       objectReference: {fileID: 0}
     - target: {fileID: 5593513896061612221, guid: 72e40e8909b80ed44ad1fc9aa7744320, type: 3}
       propertyPath: m_LocalPosition.x
