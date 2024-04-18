@@ -19,7 +19,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Benhem/SceneReferenceList.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/OnTriggerStayBehavior.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/ParticleBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeartBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PauseMenu.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -95,6 +96,10 @@
       <workItem from="1713209261672" duration="1393000" />
       <workItem from="1713289094781" duration="1993000" />
       <workItem from="1713298768356" duration="2294000" />
+      <workItem from="1713309934781" duration="4019000" />
+      <workItem from="1713377875846" duration="1703000" />
+      <workItem from="1713407285763" duration="6185000" />
+      <workItem from="1713458049637" duration="2139000" />
     </task>
     <servers />
   </component>

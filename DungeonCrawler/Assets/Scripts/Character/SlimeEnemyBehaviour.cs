@@ -22,6 +22,8 @@ public class SlimeEnemyBehaviour : MonoBehaviour
     public UnityEvent onDeath;
     [SerializeField] private Transform particle;
     [SerializeField] private Transform slimePosition;
+    [SerializeField] private Animator animator;
+    
 
 
     private void Start()
@@ -63,6 +65,15 @@ public class SlimeEnemyBehaviour : MonoBehaviour
         {
             onDeath.Invoke();
         }
+
+
+        float distance = Vector3.Distance(player.position, transform.position);
+
+        if (distance < 25)
+        {
+            animator.SetBool("BeginHunt", true);
+        }
+
     }
 
     public void OnMove()

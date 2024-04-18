@@ -22,7 +22,7 @@ public class CharacterMoveBehaviour : MonoBehaviour
     [SerializeField] private Sprite emptyHeart;
     [SerializeField] private Image[] hearts;
     [SerializeField] private int heartNum;
-    [SerializeField] private int health;
+    [SerializeField] private FloatData health;
     private bool canLose = true;
     [SerializeField] private Material orgMat;
     [SerializeField] private Material flashMat;
@@ -82,7 +82,7 @@ public class CharacterMoveBehaviour : MonoBehaviour
             else
             {
                 animator.SetBool("IsWalking", false);
-                if (health < 2)
+                if (health.Value < 2)
                 {
                     animator.SetBool("IsHurt", true);
                 }
@@ -96,14 +96,14 @@ public class CharacterMoveBehaviour : MonoBehaviour
         
         
     
-    if (health > heartNum)
+    if (health.Value > heartNum)
         {
-            health = heartNum;
+            health.Value = heartNum;
         }
 
         for (int i = 0; i < hearts.Length; i++)
         {
-            if (i < health)
+            if (i < health.Value)
             {
                 hearts[i].sprite = fullHeart;
             }
@@ -123,7 +123,7 @@ public class CharacterMoveBehaviour : MonoBehaviour
             }
         }
 
-        if (health <= 0)
+        if (health.Value <= 0)
         {
             canMove = false;
             animator.SetBool("IsHurt", false);
@@ -155,7 +155,7 @@ public class CharacterMoveBehaviour : MonoBehaviour
     {
         if (canLose)
         {
-            health -= 1;
+            health.Value -= 1;
         }
     }
 
@@ -176,7 +176,7 @@ public class CharacterMoveBehaviour : MonoBehaviour
     }
     public void BeginFlash()
     {
-        if (canLose && health > 0)
+        if (canLose && health.Value > 0)
         {
             
             StartCoroutine(OnFlash());
@@ -294,7 +294,7 @@ public class CharacterMoveBehaviour : MonoBehaviour
         yield return new WaitForSeconds(animator.GetCurrentAnimatorClipInfo(0)[0].clip.length);
         animator.SetBool("IsItem", false);
         heartNum += 1;
-        health = heartNum;
+        health.Value = heartNum;
         canMove = true;
         onItemEvent.Invoke();
     }

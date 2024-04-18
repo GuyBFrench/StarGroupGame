@@ -32,9 +32,9 @@ public class FloatData : ScriptableObject
         if (data != null) Value += data.Value;
     }
 
-    public void SetValue(FloatData data)
+    public void SetValue(float data)
     {
-        if (data != null) Value = data.Value;
+        if (data != null) Value = data;
     }
     
     public void CheckValueRange()
