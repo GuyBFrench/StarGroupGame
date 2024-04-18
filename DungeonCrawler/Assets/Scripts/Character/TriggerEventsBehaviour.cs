@@ -7,7 +7,7 @@ namespace Brady
     public class TriggerEventsBehaviour : MonoBehaviour
     {
 
-        public UnityEvent onEnemyDamage, onPlayerDamage;
+        public UnityEvent onEnemyDamage, onPlayerDamage, onCheerEnd;
         
         private void OnTriggerEnter(Collider other)
         {
@@ -22,6 +22,16 @@ namespace Brady
             {
                 onPlayerDamage.Invoke(); 
             }
+        }
+
+        private void OnTriggerExit(Collider other)
+        {
+            
+            if (other.gameObject.CompareTag("Player"))
+            {
+                onCheerEnd.Invoke(); 
+            }
+            
         }
         
         
