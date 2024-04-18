@@ -124,6 +124,5 @@ public class SlimeEnemyBehaviour : MonoBehaviour
     {
         particle.position = slimePosition.position;
     }
-
-
+    
 }
