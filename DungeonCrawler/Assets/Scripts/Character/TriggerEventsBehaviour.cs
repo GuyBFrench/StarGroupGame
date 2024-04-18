@@ -16,7 +16,6 @@ namespace Brady
             if (other.gameObject.CompareTag("Sword"))
             {
              onEnemyDamage.Invoke();
-             Debug.Log("sword");
             }
             
             if (other.gameObject.CompareTag("Player"))

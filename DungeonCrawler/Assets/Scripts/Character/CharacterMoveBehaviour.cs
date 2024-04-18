@@ -17,7 +17,7 @@ public class CharacterMoveBehaviour : MonoBehaviour
     [SerializeField] private float rotationSpeed = 4f;
     [SerializeField] private Button attackButton;
     [SerializeField] private Button rollButton;
-    public UnityEvent strikeEvent, offStrikeEvent, onCharDeath;
+    public UnityEvent strikeEvent, offStrikeEvent, onCharDeath, onItemEvent;
     [SerializeField] private Sprite fullHeart;
     [SerializeField] private Sprite emptyHeart;
     [SerializeField] private Image[] hearts;
@@ -85,6 +85,11 @@ public class CharacterMoveBehaviour : MonoBehaviour
                 if (health < 2)
                 {
                     animator.SetBool("IsHurt", true);
+                }
+
+                else
+                {
+                    animator.SetBool("IsHurt", false);
                 }
             }
         }
@@ -241,21 +246,21 @@ public class CharacterMoveBehaviour : MonoBehaviour
     {
         float animWait = animator.GetCurrentAnimatorClipInfo(0)[0].clip.length;
 
-        if (health < 2)
-        {
-            animWait *= 0.5f;
-        }
+        
+        
+        animWait *= 0.75f;
+        
 
         yield return new WaitForSeconds(animWait);
         
         animator.SetBool(animName, false);
-        canMove = true;
-        
         
     }
 
     private IEnumerator WaitForReactiveAttack()
     {
+        yield return new WaitForSeconds(1.25f);
+        canMove = true;
         yield return new WaitForSeconds(3.5f);
         attackButton.interactable = true;
         
@@ -264,9 +269,34 @@ public class CharacterMoveBehaviour : MonoBehaviour
     
     private IEnumerator WaitForReactiveRoll()
     {
+        yield return new WaitForSeconds(1.5f);
+        canMove = true;
         yield return new WaitForSeconds(7);
         rollButton.interactable = true;
         
+    }
+
+    public void stopMovement()
+    {
+        canMove = false;
+        animator.SetBool("IsWalking", false);
+        animator.SetBool("IsHurt", false);
+    }
+    public void OnItemGain()
+    {
+        
+        animator.SetBool("IsItem", true);
+        StartCoroutine(ItemGain());
+    }
+
+    private IEnumerator ItemGain()
+    {
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorClipInfo(0)[0].clip.length);
+        animator.SetBool("IsItem", false);
+        heartNum += 1;
+        health = heartNum;
+        canMove = true;
+        onItemEvent.Invoke();
     }
     
 }
