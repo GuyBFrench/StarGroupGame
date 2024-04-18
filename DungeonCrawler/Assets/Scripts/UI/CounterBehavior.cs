@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class CounterBehavior : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-}
+        public IntData loadRandomSceneCountData; // Reference to the IntData script for counting
+    
+        public void CountLoadRandomScene()
+        {
+            if (loadRandomSceneCountData != null)
+            {
+                loadRandomSceneCountData.UpdateValue(1);
+            }
+        }
+   }
