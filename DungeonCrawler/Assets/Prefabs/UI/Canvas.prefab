@@ -2460,6 +2460,7 @@ GameObject:
   - component: {fileID: 3821287940231908362}
   - component: {fileID: 8631642190603884332}
   - component: {fileID: 953769197755012153}
+  - component: {fileID: 5216648993654022171}
   m_Layer: 5
   m_Name: Open
   m_TagString: Untagged
@@ -2582,6 +2583,31 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 919132149155446097, guid: cc3e0528de6694c31a024ac5e3f7632d, type: 3}
+        m_TargetAssemblyTypeName: SceneReferenceList, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5216648993654022171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5769429472146103974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55f10ad05e7adaa4ba96e8826e10f9db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  functionCountData: {fileID: 11400000, guid: ee985867c980c2b438d7652edc57b846, type: 2}
 --- !u!1 &6121969281986079917
 GameObject:
   m_ObjectHideFlags: 0
