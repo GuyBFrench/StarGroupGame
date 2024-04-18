@@ -298,5 +298,18 @@ public class CharacterMoveBehaviour : MonoBehaviour
         canMove = true;
         onItemEvent.Invoke();
     }
+
+    public void BeginCheer()
+    {
+        Debug.Log("Entered");
+        animator.SetBool("IsWalking", false);
+        animator.SetBool("IsHurt", false);
+        animator.SetBool("IsCheer", true);
+    }
+
+    public void EndCheer()
+    {
+        animator.SetBool("IsCheer", false);
+    }
     
 }
