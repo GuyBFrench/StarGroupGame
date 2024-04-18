@@ -80,12 +80,40 @@ public class SlimeEnemyBehaviour : MonoBehaviour
     public void SetHealth()
     {
         health = maxHealth;
+        UpdateHeartsUI(); // Add this line to update UI sprites
     }
+
     
     public void loseHealth()
     {
         health -= 1;
     }
+    
+    private void UpdateHeartsUI()
+    {
+        for (int i = 0; i < hearts.Length; i++)
+        {
+            if (i < health)
+            {
+                hearts[i].sprite = fullHeart;
+            }
+            else
+            {
+                hearts[i].sprite = emptyHeart;
+            }
+        
+            if (i < heartNum)
+            {
+                hearts[i].enabled = true;
+            }
+            else
+            {
+                hearts[i].enabled = false;
+            }
+        }
+    }
+
+    
     
     public void CauseKockback()
     {
