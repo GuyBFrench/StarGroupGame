@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2b4672aa-6bdc-428f-a86d-5c53eaa35848" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DungeonCrawler/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DungeonCrawler/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Anims/MainChar/KnightAC.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/MainChar/KnightAC.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Anims/MainChar/Roll.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Anims/MainChar/Roll.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level9.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level9.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LevelTool/Prefabs/Exit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LevelTool/Prefabs/Exit.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Canvas.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/SOs/Int/New Int Data.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SOs/Int/New Int Data.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/CounterBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CounterBehavior.cs" afterDir="false" />
