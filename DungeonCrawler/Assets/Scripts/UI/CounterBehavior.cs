@@ -1,32 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CounterBehavior : MonoBehaviour
 {
-
-    private int clickCount = 0;
-    public IntData clickCountData;
+    public IntData intData; // Assign your IntData asset to this field in the Inspector
 
     private void Start()
     {
-        // Ensure the click count data is initialized properly
-        UpdateClickCountData();
+        GetComponent<Button>().onClick.AddListener(IncrementValue);
     }
 
-    public void IncrementClickCount()
+    private void IncrementValue()
     {
-        // Increment the click count
-        clickCount++;
-
-        // Update the click count data
-        UpdateClickCountData();
+        intData.UpdateValue(1); // Increment the value by 1 on each button click
     }
-
-    private void UpdateClickCountData()
-    {
-        // Update the IntData with the current click count
-        clickCountData.SetValue(clickCount);
-    }
-
 }
