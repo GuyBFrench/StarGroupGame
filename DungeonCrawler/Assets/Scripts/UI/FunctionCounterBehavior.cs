@@ -1,29 +1,36 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 
 public class FunctionCounterBehavior : MonoBehaviour
 {
-    private int functionCount = 0;
-    public IntData functionCountData;
+    public IntData intData; // Assign the IntData asset in the Inspector
+    public int targetValue = 5; // Set the target value to open the new scene
 
     private void Start()
     {
-        // Ensure the function count data is initialized properly
-        UpdateFunctionCountData();
+        // Get the Button component attached to the same GameObject
+        Button button = GetComponent<Button>();
+        if (button != null)
+        {
+            // Subscribe to the onClick event of the Button
+            button.onClick.AddListener(IncrementValue);
+        }
     }
 
-    public void CountFunctionCall()
+    private void IncrementValue()
     {
-        // Increment the function count
-        functionCount++;
-
-        // Update the function count data
-        UpdateFunctionCountData();
+        intData.UpdateValue(1); // Increment the value by 1
+        CheckTargetValue();
     }
 
-    private void UpdateFunctionCountData()
+    private void CheckTargetValue()
     {
-        // Update the IntData with the current function count
-        functionCountData.SetValue(functionCount);
+        if (intData.value >= targetValue)
+        {
+            // Open the new scene
+            SceneManager.LoadScene("Scenes/BossLevel");
+        }
     }
 }
-

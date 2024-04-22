@@ -47,6 +47,12 @@ public class IntData : ScriptableObject
         if (!(value >= maxValue)) return;
         maxValueEvent.Invoke();
         value = maxValue;
+        ResetValue(); // Call the ResetValue method after reaching the maximum value
+
     }
-    
+    public void ResetValue()
+    {
+        value = 0; // Reset the value to zero
+    }
+
 }
