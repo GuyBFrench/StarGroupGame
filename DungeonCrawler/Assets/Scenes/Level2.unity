@@ -29530,7 +29530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intData: {fileID: 11400000, guid: 9c71c3acb177ecf4eb051da7a16a8a42, type: 2}
-  targetValue: 5
+  targetValue: 4
 --- !u!1001 &1171112517
 PrefabInstance:
   m_ObjectHideFlags: 0
