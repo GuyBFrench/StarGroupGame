@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class CounterBehavior : MonoBehaviour
 {
     public IntData intData; // Assign the IntData asset in the Inspector
-    public int maxValue = 5; // Set the maximum value
+    public int maxValue = 4; // Set the maximum value
 
     private void Start()
     {
