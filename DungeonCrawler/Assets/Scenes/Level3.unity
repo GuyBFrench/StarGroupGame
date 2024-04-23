@@ -27100,7 +27100,7 @@ PrefabInstance:
     - target: {fileID: 148555475530887710, guid: 75f2976f8d43f644fad0cffd7b9ba149, type: 3}
       propertyPath: openButton
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1302656014}
     - target: {fileID: 1286882691477164742, guid: 75f2976f8d43f644fad0cffd7b9ba149, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -38841,6 +38841,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8147805229980084969, guid: f9771341edaace944a0ca53ddafde260, type: 3}
   m_PrefabInstance: {fileID: 1301227999}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1302656014 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3830707867103525057, guid: 3836188f7555d4a46a4870e44a33cf20, type: 3}
+  m_PrefabInstance: {fileID: 2107775008}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1303044297
 PrefabInstance:
   m_ObjectHideFlags: 0

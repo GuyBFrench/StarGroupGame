@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6050889291687602}
   - component: {fileID: 4065890596584686708}
   - component: {fileID: 666888514887075183}
-  - component: {fileID: 1160621256562046101}
   m_Layer: 6
   m_Name: Exit
   m_TagString: Untagged
@@ -69,19 +68,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openButton: {fileID: 0}
---- !u!114 &1160621256562046101
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7637326492230700769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2904df115b569a246885ba92efd50fb9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clickCountData: {fileID: 11400000, guid: ee985867c980c2b438d7652edc57b846, type: 2}
+  cheerEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endCheerEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &2233628843629493957
 PrefabInstance:
   m_ObjectHideFlags: 0
