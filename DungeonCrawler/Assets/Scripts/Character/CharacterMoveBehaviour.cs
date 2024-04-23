@@ -21,7 +21,7 @@ public class CharacterMoveBehaviour : MonoBehaviour
     [SerializeField] private Sprite fullHeart;
     [SerializeField] private Sprite emptyHeart;
     [SerializeField] private Image[] hearts;
-    [SerializeField] private int heartNum;
+    [SerializeField] private FloatData heartNum;
     [SerializeField] private FloatData health;
     private bool canLose = true;
     [SerializeField] private Material orgMat;
@@ -96,9 +96,9 @@ public class CharacterMoveBehaviour : MonoBehaviour
         
         
     
-    if (health.Value > heartNum)
+    if (health.Value > heartNum.Value)
         {
-            health.Value = heartNum;
+            health.Value = heartNum.Value;
         }
 
         for (int i = 0; i < hearts.Length; i++)
@@ -112,7 +112,7 @@ public class CharacterMoveBehaviour : MonoBehaviour
                 hearts[i].sprite = emptyHeart;
             }
 
-            if (i < heartNum)
+            if (i < heartNum.Value)
             {
                 hearts[i].enabled = true;
             }
@@ -259,9 +259,9 @@ public class CharacterMoveBehaviour : MonoBehaviour
 
     private IEnumerator WaitForReactiveAttack()
     {
-        yield return new WaitForSeconds(1.25f);
+        yield return new WaitForSeconds(1);
         canMove = true;
-        yield return new WaitForSeconds(3.5f);
+        yield return new WaitForSeconds(2.5f);
         attackButton.interactable = true;
         
         
@@ -269,7 +269,7 @@ public class CharacterMoveBehaviour : MonoBehaviour
     
     private IEnumerator WaitForReactiveRoll()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1);
         canMove = true;
         yield return new WaitForSeconds(7);
         rollButton.interactable = true;
@@ -293,8 +293,8 @@ public class CharacterMoveBehaviour : MonoBehaviour
     {
         yield return new WaitForSeconds(animator.GetCurrentAnimatorClipInfo(0)[0].clip.length);
         animator.SetBool("IsItem", false);
-        heartNum += 1;
-        health.Value = heartNum;
+        heartNum.Value += 1;
+        health.Value = heartNum.Value;
         canMove = true;
         onItemEvent.Invoke();
     }
