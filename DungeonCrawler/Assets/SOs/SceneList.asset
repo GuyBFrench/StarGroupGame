@@ -13,7 +13,4 @@ MonoBehaviour:
   m_Name: SceneList
   m_EditorClassIdentifier: 
   sceneReferences:
-  - {fileID: 11400000, guid: 9b94251f2783bff48837167086913b56, type: 2}
-  - {fileID: 11400000, guid: f8c53016bf9f4be4487c0031146460dd, type: 2}
-  - {fileID: 11400000, guid: 63111a48a0ca8d645a90559d40f9919a, type: 2}
-  - {fileID: 11400000, guid: c60cd50e98056b04c9761916f86d1655, type: 2}
+  - {fileID: 11400000, guid: e8c32732a6a99da4290d8fcb17fbdba9, type: 2}
