@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465788, g: 0.49641287, b: 0.5748173, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -95344,6 +95344,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 7264378931960901866}
+    - target: {fileID: 2245423506935776357, guid: d7447c183bd2442dfae7df4a831c4c0e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2376496102290005975, guid: d7447c183bd2442dfae7df4a831c4c0e, type: 3}
       propertyPath: player
       value: 
@@ -95351,6 +95355,10 @@ PrefabInstance:
     - target: {fileID: 2997505412884412757, guid: d7447c183bd2442dfae7df4a831c4c0e, type: 3}
       propertyPath: m_Name
       value: PurpleSlimeEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 2997505412884412757, guid: d7447c183bd2442dfae7df4a831c4c0e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4284128638148876079, guid: d7447c183bd2442dfae7df4a831c4c0e, type: 3}
       propertyPath: onEnemyDamage.m_PersistentCalls.m_Calls.Array.data[3].m_Target

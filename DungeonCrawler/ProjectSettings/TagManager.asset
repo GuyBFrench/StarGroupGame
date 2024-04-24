@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Sword
+  - Waypoint1
+  - Waypoint2
+  - Waypoint3
+  - Boss
   layers:
   - Default
   - TransparentFX
